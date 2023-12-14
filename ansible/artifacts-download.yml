@@ -39,6 +39,7 @@
         aws_default_region: "{{ cloud_public_storage_region }}"
         aws_access_key_id: "{{ cloud_artifact_storage_accountname }}"
         aws_secret_access_key: "{{ cloud_artifact_storage_secret }}"
+        aws_enpoint_url: "{{ cloud_storage_url}}"
       when: cloud_service_provider == "aws"
 
     - name: download artifact from oci oss storage
